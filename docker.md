@@ -3,6 +3,7 @@
 - `docker pull <image_name>` - downloads image  
 - `docker images` - list all images  
 - `docker run <image_name>` -  run images or download and run image
+    - --rm - to remove the docker instance after it ends
     - --name
     - -d
     - -p `<os_port>:<container_port>`
@@ -14,6 +15,7 @@
     - -a - shows all containers
 - `docker build -t <somename:1.0> <Dockerfile_path>`
     - -t - define tag name
+    - -f - choose a custom filename
 - `docker network ls` - List all networks
 - `docker network create` `<network_name>`
 - `docker inspect <id_or_name>` - See all configuration info( Root folder, Pid, Timestamps )
